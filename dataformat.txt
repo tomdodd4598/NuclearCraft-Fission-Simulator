@@ -1,0 +1,76 @@
+ NuclearCraft Fission Simulator
+#==============================#
+
+ simsettings
+#===========#
+
+speed [double]: Number of in-game ticks per iteration.
+
+iterations [int]: Number of iterations for the simulation.
+
+print_each_iteration [boolean]: If true, the current fuel and resource stats will be printed each iteration.
+___________________________________________________________________________________________________________________________
+
+ fueldata
+#========#
+
+fuel name [String]: Name of the fuel.
+
+time_per_mb [double]: Ticks per mB of depleted fuel. Note: one pellet is 1296mB.
+
+vessels [int]: Number of fuel vessels containing the fuel.
+
+starting_amount_mb [double]: Starting amount of the fuel in mB.
+
+supply_rate_mb_per_tick [double]: Rate of active supply of the fuel in mB.
+
+has_reprocessor_recipe [boolean]: True if this fuel can be reprocessed.
+
+reprocessor_recipe {input_mb, output_mb[]}:
+	input_mb [double]: Relative input amount in mB.
+	
+	output_mb name [String]: Name of the output resource.
+	output_mb [double]: Relative output amount for this resource in mB.
+	
+has_crafting_recipe [boolean]: True if this fuel can be crafted.
+
+crafting_recipe {result_mb, ingredient_mb[]}:
+	result_mb [double]: Relative output amount in mB.
+	
+	ingredient_mb name [String]: Name of the input resource.
+	ingredient_mb [double]: Relative input amount for this resource in mB.
+	
+craft_product_limit_mb [double]: The total amount of the fuel will not go above this level through crafting. Set to `-1` for no limit.
+
+recipe_priority [int]: Priority for the crafting recipe. The higher the priority, the earlier it is processed. Note: the fuel crafting recipes are put into the same priority-ordered list as the resource decay recipes.
+
+recipe_weight [double]: Between 0 and 1. The amount of the fuel to craft on a given iteration as a fraction of the maximum possible amount from the resources available.
+___________________________________________________________________________________________________________________________
+
+ resourcedata
+#============#
+
+resource name [String]: Name of the resource.
+
+starting_amount_mb [double]: Starting amount of the resource in mB.
+
+supply_rate_mb_per_tick [double]: Rate of active supply of the resource in mB.
+
+has_decay_recipe [boolean]: True if this resource can be decay hastened.
+
+decay_recipe {input_mb, output_mb[]}:
+	input_mb [double]: Relative input amount in mB.
+	
+	output_mb name [String]: Name of the output resource.
+	output_mb [double]: Relative output amount for this resource in mB.
+	
+decay_threshold_mb [double]: The total amount of the resource will not go below this level through decaying to other resources. Set to `-1` to disable this resource as a decay input.
+
+recipe_priority [int]: Priority for the decay recipe. The higher the priority, the earlier it is processed. Note: the resource decay recipes are put into the same priority-ordered list as the fuel crafting recipes.
+
+recipe_weight [double]: Between 0 and 1. The amount of the resource to decay on a given iteration as a fraction of the maximum possible amount.
+
+craft_threshold_mb [double]: The total amount of the resource will not go below this level through crafting fuels. Set to `-1` to disable this resource as a crafting ingredient.
+
+decay_product_limit_mb [double]: The total amount of the resource will not go above this level through decaying. Set to `-1` for no limit.
+___________________________________________________________________________________________________________________________
