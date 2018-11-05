@@ -24,5 +24,4 @@ class BasicList<E> extends ArrayList<E> {
 	}
 	
 	private static final long serialVersionUID = -8950908686309848450L;
-	
 }
