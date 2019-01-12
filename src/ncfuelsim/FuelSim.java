@@ -66,9 +66,12 @@ public class FuelSim {
 		print("Press Enter to begin the simulation at " + SPEED + "x speed, iterating " + ITERATIONS + " times . . .");
 		scanner.nextLine();
 		
+		if (!PRINT_EACH) print("Running . . .");
+		
 		long iter = 0;
 		while (iter < ITERATIONS) {
-			print("Iteration " + ++iter + " . . .");
+			iter++;
+			if (PRINT_EACH) print("Iteration " + iter + " . . .");
 			
 			process();
 			
