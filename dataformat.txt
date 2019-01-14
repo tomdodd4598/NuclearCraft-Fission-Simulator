@@ -16,11 +16,11 @@ ________________________________________________________________________________
 
 fuel name [String]: Name of the fuel.
 
-time_per_mb [double]: Ticks per mB of depleted fuel. Note: one pellet is 1296mB.
+time_per_mb [double]: Ticks per mB of depleted fuel.
 
 vessels [int]: Number of fuel vessels containing the fuel.
 
-starting_amount_mb [double]: Starting amount of the fuel in mB.
+starting_amount_mb [double]: Starting amount of the fuel in mB. Note: one fuel pellet is 1296mB.
 
 supply_rate_mb_per_tick [double]: Rate of active supply of the fuel in mB.
 
@@ -52,7 +52,7 @@ ________________________________________________________________________________
 
 resource name [String]: Name of the resource.
 
-starting_amount_mb [double]: Starting amount of the resource in mB.
+starting_amount_mb [double]: Starting amount of the resource in mB. Note: one clump is 144mB and one tiny clump is 16mB.
 
 supply_rate_mb_per_tick [double]: Rate of active supply of the resource in mB.
 
