@@ -43,7 +43,7 @@ public class FuelSim {
 		
 		NodeList settingsList = settingsDoc.getElementsByTagName(settingsRoot.getNodeName());
 		Element settingsElement = (Element) settingsList.item(0);
-				
+		
 		SPEED = readDouble(subElement(settingsElement, "speed"));
 		ITERATIONS = readLong(subElement(settingsElement, "iterations"));
 		PRINT_EACH = readBoolean(subElement(settingsElement, "print_each_iteration"));
