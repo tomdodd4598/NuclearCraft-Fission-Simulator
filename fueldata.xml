@@ -1,14 +1,14 @@
 <data>
 	<fuel name="TBU">
 		<time_per_mb>144000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="U-233">16</output_mb>
-			<output_mb name="U-235">8</output_mb>
+			<output_mb name="U-233">8</output_mb>
+			<output_mb name="U-235">16</output_mb>
 			<output_mb name="Np-236">8</output_mb>
 			<output_mb name="Np-237">32</output_mb>
 		</reprocessor_recipe>
@@ -17,14 +17,14 @@
 			<result_mb>1296</result_mb>
 			<ingredient_mb name="Th-232">9*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
+		<craft_product_limit_mb>1296*512</craft_product_limit_mb>
+		<recipe_priority>199</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 	</fuel>
 	
 	<fuel name="LEU-233">
 		<time_per_mb>64000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -41,47 +41,47 @@
 			<ingredient_mb name="U-233">1*144</ingredient_mb>
 			<ingredient_mb name="U-238">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*288</craft_product_limit_mb>
+		<recipe_priority>196</recipe_priority>
+		<recipe_weight>0.25</recipe_weight>
 	</fuel>
 	
 	<fuel name="HEU-233">
 		<time_per_mb>64000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="Np-236">32</output_mb>
-			<output_mb name="Np-237">8</output_mb>
-			<output_mb name="Pu-242">16</output_mb>
+			<output_mb name="Np-236">20</output_mb>
+			<output_mb name="Np-237">12</output_mb>
+			<output_mb name="Pu-242">24</output_mb>
 			<output_mb name="Am-243">8</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="U-233">4*144</ingredient_mb>
-			<ingredient_mb name="U-238">5*144</ingredient_mb>
+			<ingredient_mb name="U-233">3*144</ingredient_mb>
+			<ingredient_mb name="U-238">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*144</craft_product_limit_mb>
+		<recipe_priority>195</recipe_priority>
+		<recipe_weight>1/3</recipe_weight>
 	</fuel>
 	
 	<fuel name="LEU-235">
 		<time_per_mb>72000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="U-238">40</output_mb>
+			<output_mb name="U-238">48</output_mb>
 			<output_mb name="Np-237">8</output_mb>
-			<output_mb name="Pu-239">8</output_mb>
-			<output_mb name="Pu-241">8</output_mb>
+			<output_mb name="Pu-239">4</output_mb>
+			<output_mb name="Pu-241">4</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
@@ -89,14 +89,14 @@
 			<ingredient_mb name="U-235">1*144</ingredient_mb>
 			<ingredient_mb name="U-238">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*384</craft_product_limit_mb>
+		<recipe_priority>198</recipe_priority>
+		<recipe_weight>0.5</recipe_weight>
 	</fuel>
 	
 	<fuel name="HEU-235">
 		<time_per_mb>72000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -110,17 +110,17 @@
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="U-235">4*144</ingredient_mb>
-			<ingredient_mb name="U-238">5*144</ingredient_mb>
+			<ingredient_mb name="U-235">3*144</ingredient_mb>
+			<ingredient_mb name="U-238">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
+		<craft_product_limit_mb>1296*192</craft_product_limit_mb>
+		<recipe_priority>197</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 	</fuel>
 	
 	<fuel name="LEN-236">
 		<time_per_mb>102000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -137,45 +137,45 @@
 			<ingredient_mb name="Np-236">1*144</ingredient_mb>
 			<ingredient_mb name="Np-237">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*288</craft_product_limit_mb>
+		<recipe_priority>194</recipe_priority>
+		<recipe_weight>0.5</recipe_weight>
 	</fuel>
 	
 	<fuel name="HEN-236">
 		<time_per_mb>102000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="U-238">16</output_mb>
+			<output_mb name="U-238">24</output_mb>
 			<output_mb name="Pu-238">8</output_mb>
-			<output_mb name="Pu-239">8</output_mb>
-			<output_mb name="Pu-242">32</output_mb>
+			<output_mb name="Pu-239">4</output_mb>
+			<output_mb name="Pu-242">28</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="Np-236">4*144</ingredient_mb>
-			<ingredient_mb name="Np-237">5*144</ingredient_mb>
+			<ingredient_mb name="Np-236">3*144</ingredient_mb>
+			<ingredient_mb name="Np-237">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
+		<craft_product_limit_mb>1296*144</craft_product_limit_mb>
+		<recipe_priority>193</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 	</fuel>
 	
 	<fuel name="LEP-239">
 		<time_per_mb>92000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="Pu-239">8</output_mb>
-			<output_mb name="Pu-242">24</output_mb>
+			<output_mb name="Pu-239">4</output_mb>
+			<output_mb name="Pu-242">28</output_mb>
 			<output_mb name="Cm-243">4</output_mb>
 			<output_mb name="Cm-246">28</output_mb>
 		</reprocessor_recipe>
@@ -185,46 +185,46 @@
 			<ingredient_mb name="Pu-239">1*144</ingredient_mb>
 			<ingredient_mb name="Pu-242">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*288</craft_product_limit_mb>
+		<recipe_priority>191</recipe_priority>
+		<recipe_weight>1/6</recipe_weight>
 	</fuel>
 	
 	<fuel name="HEP-239">
 		<time_per_mb>92000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="Am-241">8</output_mb>
-			<output_mb name="Am-242">24</output_mb>
+			<output_mb name="Am-241">12</output_mb>
+			<output_mb name="Am-242">4</output_mb>
 			<output_mb name="Cm-245">8</output_mb>
-			<output_mb name="Cm-246">24</output_mb>
+			<output_mb name="Cm-246">40</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="Pu-239">4*144</ingredient_mb>
-			<ingredient_mb name="Pu-242">5*144</ingredient_mb>
+			<ingredient_mb name="Pu-239">3*144</ingredient_mb>
+			<ingredient_mb name="Pu-242">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*144</craft_product_limit_mb>
+		<recipe_priority>190</recipe_priority>
+		<recipe_weight>0.2</recipe_weight>
 	</fuel>
 	
 	<fuel name="MOX-239">
 		<time_per_mb>84000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="U-238">40</output_mb>
-			<output_mb name="Pu-242">12</output_mb>
-			<output_mb name="Am-243">8</output_mb>
+			<output_mb name="U-238">48</output_mb>
+			<output_mb name="Pu-242">8</output_mb>
+			<output_mb name="Am-243">4</output_mb>
 			<output_mb name="Cm-243">4</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
@@ -233,14 +233,14 @@
 			<ingredient_mb name="Pu-239">1*144</ingredient_mb>
 			<ingredient_mb name="U-238">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*288</craft_product_limit_mb>
+		<recipe_priority>192</recipe_priority>
+		<recipe_weight>0.25</recipe_weight>
 	</fuel>
 	
 	<fuel name="LEP-241">
 		<time_per_mb>60000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -248,7 +248,7 @@
 			<input_mb>81</input_mb>
 			<output_mb name="Pu-242">4</output_mb>
 			<output_mb name="Am-242">4</output_mb>
-			<output_mb name="Am-243">4</output_mb>
+			<output_mb name="Am-243">8</output_mb>
 			<output_mb name="Cm-246">48</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
@@ -257,47 +257,47 @@
 			<ingredient_mb name="Pu-241">1*144</ingredient_mb>
 			<ingredient_mb name="Pu-242">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*216</craft_product_limit_mb>
+		<recipe_priority>188</recipe_priority>
+		<recipe_weight>1/3</recipe_weight>
 	</fuel>
 	
 	<fuel name="HEP-241">
 		<time_per_mb>60000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="Am-241">8</output_mb>
-			<output_mb name="Cm-245">8</output_mb>
-			<output_mb name="Cm-246">24</output_mb>
-			<output_mb name="Cm-247">24</output_mb>
+			<output_mb name="Am-243">8</output_mb>
+			<output_mb name="Cm-245">4</output_mb>
+			<output_mb name="Cm-246">28</output_mb>
+			<output_mb name="Cm-247">20</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="Pu-241">4*144</ingredient_mb>
-			<ingredient_mb name="Pu-242">5*144</ingredient_mb>
+			<ingredient_mb name="Pu-241">3*144</ingredient_mb>
+			<ingredient_mb name="Pu-242">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*108</craft_product_limit_mb>
+		<recipe_priority>187</recipe_priority>
+		<recipe_weight>0.5</recipe_weight>
 	</fuel>
 	
 	<fuel name="MOX-241">
 		<time_per_mb>56000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="U-238">40</output_mb>
-			<output_mb name="Pu-241">8</output_mb>
+			<output_mb name="U-238">48</output_mb>
+			<output_mb name="Pu-241">4</output_mb>
 			<output_mb name="Pu-242">8</output_mb>
-			<output_mb name="Cm-246">8</output_mb>
+			<output_mb name="Cm-246">4</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
@@ -305,14 +305,14 @@
 			<ingredient_mb name="Pu-241">1*144</ingredient_mb>
 			<ingredient_mb name="U-238">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
+		<craft_product_limit_mb>1296*216</craft_product_limit_mb>
+		<recipe_priority>189</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 	</fuel>
 	
 	<fuel name="LEA-242">
 		<time_per_mb>54000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -329,38 +329,38 @@
 			<ingredient_mb name="Am-242">1*144</ingredient_mb>
 			<ingredient_mb name="Am-243">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*192</craft_product_limit_mb>
+		<recipe_priority>186</recipe_priority>
+		<recipe_weight>0.5</recipe_weight>
 	</fuel>
 	
 	<fuel name="HEA-242">
 		<time_per_mb>54000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="Cm-245">16</output_mb>
-			<output_mb name="Cm-246">32</output_mb>
-			<output_mb name="Cm-247">8</output_mb>
+			<output_mb name="Cm-245">12</output_mb>
+			<output_mb name="Cm-246">40</output_mb>
+			<output_mb name="Cm-247">4</output_mb>
 			<output_mb name="Bk-247">8</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="Am-242">4*144</ingredient_mb>
-			<ingredient_mb name="Am-243">5*144</ingredient_mb>
+			<ingredient_mb name="Am-242">3*144</ingredient_mb>
+			<ingredient_mb name="Am-243">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
+		<craft_product_limit_mb>1296*96</craft_product_limit_mb>
+		<recipe_priority>185</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 	</fuel>
 	
 	<fuel name="LECm-243">
 		<time_per_mb>52000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -377,14 +377,14 @@
 			<ingredient_mb name="Cm-243">1*144</ingredient_mb>
 			<ingredient_mb name="Cm-246">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*162</craft_product_limit_mb>
+		<recipe_priority>184</recipe_priority>
+		<recipe_weight>1/6</recipe_weight>
 	</fuel>
 	
 	<fuel name="HECm-243">
 		<time_per_mb>52000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -398,17 +398,17 @@
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="Cm-243">4*144</ingredient_mb>
-			<ingredient_mb name="Cm-246">5*144</ingredient_mb>
+			<ingredient_mb name="Cm-243">3*144</ingredient_mb>
+			<ingredient_mb name="Cm-246">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*81</craft_product_limit_mb>
+		<recipe_priority>183</recipe_priority>
+		<recipe_weight>0.2</recipe_weight>
 	</fuel>
 	
 	<fuel name="LECm-245">
 		<time_per_mb>68000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -425,14 +425,14 @@
 			<ingredient_mb name="Cm-245">1*144</ingredient_mb>
 			<ingredient_mb name="Cm-246">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*162</craft_product_limit_mb>
+		<recipe_priority>182</recipe_priority>
+		<recipe_weight>0.25</recipe_weight>
 	</fuel>
 	
 	<fuel name="HECm-245">
 		<time_per_mb>68000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -446,17 +446,17 @@
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="Cm-245">4*144</ingredient_mb>
-			<ingredient_mb name="Cm-246">5*144</ingredient_mb>
+			<ingredient_mb name="Cm-245">3*144</ingredient_mb>
+			<ingredient_mb name="Cm-246">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*81</craft_product_limit_mb>
+		<recipe_priority>181</recipe_priority>
+		<recipe_weight>1/3</recipe_weight>
 	</fuel>
 	
 	<fuel name="LECm-247">
 		<time_per_mb>78000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -473,14 +473,14 @@
 			<ingredient_mb name="Cm-247">1*144</ingredient_mb>
 			<ingredient_mb name="Cm-246">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*162</craft_product_limit_mb>
+		<recipe_priority>180</recipe_priority>
+		<recipe_weight>0.5</recipe_weight>
 	</fuel>
 	
 	<fuel name="HECm-247">
 		<time_per_mb>78000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -494,17 +494,17 @@
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="Cm-247">4*144</ingredient_mb>
-			<ingredient_mb name="Cm-246">5*144</ingredient_mb>
+			<ingredient_mb name="Cm-247">3*144</ingredient_mb>
+			<ingredient_mb name="Cm-246">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
+		<craft_product_limit_mb>1296*81</craft_product_limit_mb>
+		<recipe_priority>179</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 	</fuel>
 	
 	<fuel name="LEB-248">
 		<time_per_mb>86000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -520,45 +520,44 @@
 			<ingredient_mb name="Bk-248">1*144</ingredient_mb>
 			<ingredient_mb name="Bk-247">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*120</craft_product_limit_mb>
+		<recipe_priority>178</recipe_priority>
+		<recipe_weight>0.5</recipe_weight>
 	</fuel>
 	
 	<fuel name="HEB-248">
 		<time_per_mb>86000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="Cf-250">8</output_mb>
-			<output_mb name="Cf-251">8</output_mb>
+			<output_mb name="Cf-250">4</output_mb>
+			<output_mb name="Cf-251">12</output_mb>
 			<output_mb name="Cf-252">48</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="Bk-248">4*144</ingredient_mb>
-			<ingredient_mb name="Bk-247">5*144</ingredient_mb>
+			<ingredient_mb name="Bk-248">3*144</ingredient_mb>
+			<ingredient_mb name="Bk-247">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
+		<craft_product_limit_mb>1296*60</craft_product_limit_mb>
+		<recipe_priority>177</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 	</fuel>
 	
 	<fuel name="LECf-249">
 		<time_per_mb>60000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="Cf-250">16</output_mb>
-			<output_mb name="Cf-251">8</output_mb>
-			<output_mb name="Cf-252">40</output_mb>
+			<output_mb name="Cf-251">20</output_mb>
+			<output_mb name="Cf-252">44</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
@@ -566,37 +565,37 @@
 			<ingredient_mb name="Cf-249">1*144</ingredient_mb>
 			<ingredient_mb name="Cf-252">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*108</craft_product_limit_mb>
+		<recipe_priority>176</recipe_priority>
+		<recipe_weight>0.25</recipe_weight>
 	</fuel>
 	
 	<fuel name="HECf-249">
 		<time_per_mb>60000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input_mb>81</input_mb>
-			<output_mb name="Cf-250">32</output_mb>
-			<output_mb name="Cf-251">16</output_mb>
-			<output_mb name="Cf-252">16</output_mb>
+			<output_mb name="Cf-250">8</output_mb>
+			<output_mb name="Cf-251">20</output_mb>
+			<output_mb name="Cf-252">36</output_mb>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="Cf-249">4*144</ingredient_mb>
-			<ingredient_mb name="Cf-252">5*144</ingredient_mb>
+			<ingredient_mb name="Cf-249">3*144</ingredient_mb>
+			<ingredient_mb name="Cf-252">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*48</craft_product_limit_mb>
+		<recipe_priority>175</recipe_priority>
+		<recipe_weight>1/3</recipe_weight>
 	</fuel>
 	
 	<fuel name="LECf-251">
 		<time_per_mb>58000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -611,14 +610,14 @@
 			<ingredient_mb name="Cf-251">1*144</ingredient_mb>
 			<ingredient_mb name="Cf-252">8*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
+		<craft_product_limit_mb>1296*108</craft_product_limit_mb>
+		<recipe_priority>174</recipe_priority>
+		<recipe_weight>0.5</recipe_weight>
 	</fuel>
 	
 	<fuel name="HECf-251">
 		<time_per_mb>58000/1296</time_per_mb>
-		<vessels>0</vessels>
+		<vessels>2147483648</vessels>
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
@@ -630,87 +629,11 @@
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
 			<result_mb>1296</result_mb>
-			<ingredient_mb name="Cf-251">4*144</ingredient_mb>
-			<ingredient_mb name="Cf-252">5*144</ingredient_mb>
+			<ingredient_mb name="Cf-251">3*144</ingredient_mb>
+			<ingredient_mb name="Cf-252">6*144</ingredient_mb>
 		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
-	</fuel>
-	
-	<fuel name="IC2-U">
-		<time_per_mb>(72000*19)/(54*912)</time_per_mb>
-		<vessels>0</vessels>
-		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_reprocessor_recipe>true</has_reprocessor_recipe>
-		<reprocessor_recipe>
-			<input_mb>912</input_mb>
-			<output_mb name="IC2-U235">4*144</output_mb>
-			<output_mb name="IC2-Pu">16</output_mb>
-		</reprocessor_recipe>
-		<has_crafting_recipe>true</has_crafting_recipe>
-		<crafting_recipe>
-			<result_mb>912</result_mb>
-			<ingredient_mb name="IC2-U235">3*16</ingredient_mb>
-			<ingredient_mb name="IC2-U238">6*144</ingredient_mb>
-		</crafting_recipe>
-		<craft_product_limit_mb>912</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
-	</fuel>
-	
-	<fuel name="IC2-MOX">
-		<time_per_mb>(84000*7)/(3*1296)</time_per_mb>
-		<vessels>0</vessels>
-		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_reprocessor_recipe>true</has_reprocessor_recipe>
-		<reprocessor_recipe>
-			<input_mb>1296</input_mb>
-			<output_mb name="IC2-Pu">28*16</output_mb>
-		</reprocessor_recipe>
-		<has_crafting_recipe>true</has_crafting_recipe>
-		<crafting_recipe>
-			<result_mb>1296</result_mb>
-			<ingredient_mb name="IC2-Pu">3*144</ingredient_mb>
-			<ingredient_mb name="IC2-U238">6*144</ingredient_mb>
-		</crafting_recipe>
-		<craft_product_limit_mb>1296</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
-		<recipe_weight>1</recipe_weight>
-	</fuel>
-	
-	<fuel name="Yellorium">
-		<time_per_mb>72000/(8*144)</time_per_mb>
-		<vessels>0</vessels>
-		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_reprocessor_recipe>true</has_reprocessor_recipe>
-		<reprocessor_recipe>
-			<input_mb>1</input_mb>
-			<output_mb name="Cyanite">1</output_mb>
-		</reprocessor_recipe>
-		<has_crafting_recipe>false</has_crafting_recipe>
-	</fuel>
-	
-	<fuel name="Blutonium">
-		<time_per_mb>72000/(8*144)</time_per_mb>
-		<vessels>0</vessels>
-		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_reprocessor_recipe>true</has_reprocessor_recipe>
-		<reprocessor_recipe>
-			<input_mb>1</input_mb>
-			<output_mb name="Cyanite">1</output_mb>
-		</reprocessor_recipe>
-		<has_crafting_recipe>true</has_crafting_recipe>
-		<crafting_recipe>
-			<result_mb>144</result_mb>
-			<ingredient_mb name="Cyanite">2*144</ingredient_mb>
-		</crafting_recipe>
-		<craft_product_limit_mb>144</craft_product_limit_mb>
-		<recipe_priority>1</recipe_priority>
+		<craft_product_limit_mb>1296*48</craft_product_limit_mb>
+		<recipe_priority>173</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 	</fuel>
 </data>

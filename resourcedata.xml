@@ -10,12 +10,12 @@
 	<resource name="Th-230">
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>true</has_decay_recipe>
+		<has_decay_recipe>false</has_decay_recipe>
 		<decay_recipe>
 			<input_mb>1</input_mb>
 			<output_mb name="Lead">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -24,13 +24,13 @@
 	
 	<resource name="Th-232">
 		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>true</has_decay_recipe>
+		<supply_rate_mb_per_tick>9</supply_rate_mb_per_tick>
+		<has_decay_recipe>false</has_decay_recipe>
 		<decay_recipe>
 			<input_mb>1</input_mb>
 			<output_mb name="Lead">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -40,12 +40,12 @@
 	<resource name="U-233">
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>true</has_decay_recipe>
+		<has_decay_recipe>false</has_decay_recipe>
 		<decay_recipe>
 			<input_mb>1</input_mb>
 			<output_mb name="Lead">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -54,13 +54,13 @@
 	
 	<resource name="U-235">
 		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>true</has_decay_recipe>
+		<supply_rate_mb_per_tick>1</supply_rate_mb_per_tick>
+		<has_decay_recipe>false</has_decay_recipe>
 		<decay_recipe>
 			<input_mb>1</input_mb>
 			<output_mb name="Lead">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -69,13 +69,13 @@
 	
 	<resource name="U-238">
 		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>true</has_decay_recipe>
+		<supply_rate_mb_per_tick>9</supply_rate_mb_per_tick>
+		<has_decay_recipe>false</has_decay_recipe>
 		<decay_recipe>
 			<input_mb>1</input_mb>
 			<output_mb name="Th-230">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -90,7 +90,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Th-232">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -105,7 +105,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="U-233">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -115,7 +115,7 @@
 	<resource name="Pu-238">
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>true</has_decay_recipe>
+		<has_decay_recipe>false</has_decay_recipe>
 		<decay_recipe>
 			<input_mb>1</input_mb>
 			<output_mb name="Th-230">1</output_mb>
@@ -135,7 +135,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="U-235">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -150,7 +150,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Np-237">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -165,7 +165,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="U-238">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -175,7 +175,7 @@
 	<resource name="Am-241">
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>true</has_decay_recipe>
+		<has_decay_recipe>false</has_decay_recipe>
 		<decay_recipe>
 			<input_mb>1</input_mb>
 			<output_mb name="Np-237">1</output_mb>
@@ -190,12 +190,12 @@
 	<resource name="Am-242">
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>true</has_decay_recipe>
+		<has_decay_recipe>false</has_decay_recipe>
 		<decay_recipe>
 			<input_mb>1</input_mb>
 			<output_mb name="Th-230">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -210,7 +210,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Pu-239">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -225,7 +225,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Pu-239">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -240,7 +240,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Pu-241">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -255,7 +255,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Pu-242">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -270,7 +270,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Am-243">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -285,7 +285,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Am-243">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -300,7 +300,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Th-232">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -315,7 +315,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Cm-245">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -325,7 +325,7 @@
 	<resource name="Cf-250">
 		<starting_amount_mb>0</starting_amount_mb>
 		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>true</has_decay_recipe>
+		<has_decay_recipe>false</has_decay_recipe>
 		<decay_recipe>
 			<input_mb>1</input_mb>
 			<output_mb name="Cm-246">1</output_mb>
@@ -345,7 +345,7 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Cm-247">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
 		<craft_threshold_mb>0</craft_threshold_mb>
@@ -360,41 +360,9 @@
 			<input_mb>1</input_mb>
 			<output_mb name="Th-232">1</output_mb>
 		</decay_recipe>
-		<decay_threshold_mb>1296</decay_threshold_mb>
+		<decay_threshold_mb>144*64*27</decay_threshold_mb>
 		<recipe_priority>1</recipe_priority>
 		<recipe_weight>1</recipe_weight>
-		<craft_threshold_mb>0</craft_threshold_mb>
-		<decay_product_limit_mb>-1</decay_product_limit_mb>
-	</resource>
-	
-	<resource name="IC2-U235">
-		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>false</has_decay_recipe>
-		<craft_threshold_mb>0</craft_threshold_mb>
-		<decay_product_limit_mb>-1</decay_product_limit_mb>
-	</resource>
-	
-	<resource name="IC2-U238">
-		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>false</has_decay_recipe>
-		<craft_threshold_mb>0</craft_threshold_mb>
-		<decay_product_limit_mb>-1</decay_product_limit_mb>
-	</resource>
-	
-	<resource name="IC2-Pu">
-		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>false</has_decay_recipe>
-		<craft_threshold_mb>0</craft_threshold_mb>
-		<decay_product_limit_mb>-1</decay_product_limit_mb>
-	</resource>
-	
-	<resource name="Cyanite">
-		<starting_amount_mb>0</starting_amount_mb>
-		<supply_rate_mb_per_tick>0</supply_rate_mb_per_tick>
-		<has_decay_recipe>false</has_decay_recipe>
 		<craft_threshold_mb>0</craft_threshold_mb>
 		<decay_product_limit_mb>-1</decay_product_limit_mb>
 	</resource>
