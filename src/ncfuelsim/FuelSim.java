@@ -156,19 +156,19 @@ public class FuelSim {
 			Element fuelElement = (Element) fuelList.item(i);
 			
 			String name = fuelElement.getAttribute("name");
-			double time = readDouble(subElement(fuelElement, "time_per_mb"));
-			long vessels = readLong(subElement(fuelElement, "vessels"));
-			double start = readDouble(subElement(fuelElement, "starting_amount_mb"));
-			double supply = readDouble(subElement(fuelElement, "supply_rate_mb_per_tick"));
+			double time = readDouble(subElement(fuelElement, "process_time"));
+			long vessels = readLong(subElement(fuelElement, "cells"));
+			double start = readDouble(subElement(fuelElement, "starting_amount"));
+			double supply = readDouble(subElement(fuelElement, "supply_rate"));
 			boolean hasReprocessorRecipe = readBoolean(subElement(fuelElement, "has_reprocessor_recipe"));
 			
 			List<Stack> reprocessingProducts = new BasicList<Stack>();
 			if (hasReprocessorRecipe) {
 				Element recipeElement = subElement(fuelElement, "reprocessor_recipe");
 				
-				double inputAmount = readDouble(subElement(recipeElement, "input_mb"));
+				double inputAmount = readDouble(subElement(recipeElement, "input"));
 				
-				NodeList outputList = recipeElement.getElementsByTagName("output_mb");
+				NodeList outputList = recipeElement.getElementsByTagName("output");
 				for (int j = 0; j < outputList.getLength(); j++) {
 					Element outputElement = (Element) outputList.item(j);
 					
@@ -187,9 +187,9 @@ public class FuelSim {
 			if (hasCraftingRecipe) {
 				Element recipeElement = subElement(fuelElement, "crafting_recipe");
 				
-				double resultAmount = readDouble(subElement(recipeElement, "result_mb"));
+				double resultAmount = readDouble(subElement(recipeElement, "result"));
 				
-				NodeList ingredientList = recipeElement.getElementsByTagName("ingredient_mb");
+				NodeList ingredientList = recipeElement.getElementsByTagName("ingredient");
 				for (int j = 0; j < ingredientList.getLength(); j++) {
 					Element ingredientElement = (Element) ingredientList.item(j);
 					
@@ -198,7 +198,7 @@ public class FuelSim {
 					
 					craftingIngredients.add(stack(ingredientName, amount));
 				}
-				craftProductLimit = readDouble(subElement(fuelElement, "craft_product_limit_mb"));
+				craftProductLimit = readDouble(subElement(fuelElement, "craft_product_limit"));
 				
 				long recipePriority = readLong(subElement(fuelElement, "recipe_priority"));
 				mapRecipePriority(recipePriority, name, "fuel");
@@ -221,8 +221,8 @@ public class FuelSim {
 			Element resourceElement = (Element) resourceList.item(i);
 			
 			String name = resourceElement.getAttribute("name");
-			double start = readDouble(subElement(resourceElement, "starting_amount_mb"));
-			double supply = readDouble(subElement(resourceElement, "supply_rate_mb_per_tick"));
+			double start = readDouble(subElement(resourceElement, "starting_amount"));
+			double supply = readDouble(subElement(resourceElement, "supply_rate"));
 			boolean hasDecayRecipe = readBoolean(subElement(resourceElement, "has_decay_recipe"));
 			
 			Stack product = null;
@@ -231,11 +231,11 @@ public class FuelSim {
 			if (hasDecayRecipe) {
 				Element recipeElement = subElement(resourceElement, "decay_recipe");
 				
-				String outputName = subElement(recipeElement, "output_mb").getAttribute("name");
-				double amount = readDouble(subElement(recipeElement, "output_mb"))/readDouble(subElement(recipeElement, "input_mb"));
+				String outputName = subElement(recipeElement, "output").getAttribute("name");
+				double amount = readDouble(subElement(recipeElement, "output"))/readDouble(subElement(recipeElement, "input"));
 				
 				product = stack(outputName, amount);
-				decayThreshold = readDouble(subElement(resourceElement, "decay_threshold_mb"));
+				decayThreshold = readDouble(subElement(resourceElement, "decay_threshold"));
 				
 				long recipePriority = readLong(subElement(resourceElement, "recipe_priority"));
 				mapRecipePriority(recipePriority, name, "resource");
@@ -243,11 +243,11 @@ public class FuelSim {
 				recipeWeight = readDouble(subElement(resourceElement, "recipe_weight"));
 			}
 			
-			double craftingThreshold = readDouble(subElement(resourceElement, "craft_threshold_mb"));
+			double craftingThreshold = readDouble(subElement(resourceElement, "craft_threshold"));
 			
 			double decayProductLimit = -1D;
-			if (subElement(resourceElement, "decay_result_limit_mb") != null) {
-				decayProductLimit = readDouble(subElement(resourceElement, "decay_product_limit_mb"));
+			if (subElement(resourceElement, "decay_result_limit") != null) {
+				decayProductLimit = readDouble(subElement(resourceElement, "decay_product_limit"));
 			}
 			
 			RESOURCE_MAP.put(name, resource(start, supply, hasDecayRecipe, product, decayThreshold, recipeWeight, craftingThreshold, decayProductLimit));
@@ -309,13 +309,13 @@ public class FuelSim {
 			print("Fuel Type: " + entry.getKey());
 			
 			Fuel fuel = entry.getValue();
-			print("Fuel Time [t/mB]: " + fuel.time);
+			print("Fuel Process Time: " + fuel.time);
 			print("Number of Vessels: " + fuel.vessels);
-			print("Starting Amount [mB]: " + fuel.amount);
-			print("Supply [mB/t]: " + fuel.supply);
-			if (fuel.hasReprocessingRecipe) print("Reprocessing Outputs [/mB]: " + fuel.reprocessingProducts.toString());
-			if (fuel.hasCraftingRecipe) print("Crafting Ingredients [/mB]: " + fuel.craftingIngredients.toString());
-			if (fuel.hasCraftingRecipe && fuel.craftProductLimit < Double.MAX_VALUE) print("Crafting Limit [mB]: " + fuel.craftProductLimit);
+			print("Starting Amount: " + fuel.amount);
+			print("Supply Rate: " + fuel.supply);
+			if (fuel.hasReprocessingRecipe) print("Reprocessing Outputs: " + fuel.reprocessingProducts.toString());
+			if (fuel.hasCraftingRecipe) print("Crafting Ingredients: " + fuel.craftingIngredients.toString());
+			if (fuel.hasCraftingRecipe && fuel.craftProductLimit < Double.MAX_VALUE) print("Crafting Limit: " + fuel.craftProductLimit);
 			if (fuel.hasCraftingRecipe) print("Crafting Recipe Weight: " + fuel.recipeWeight);
 			
 			line();
@@ -327,8 +327,8 @@ public class FuelSim {
 			print("Fuel Type: " + entry.getKey());
 			
 			Fuel fuel = entry.getValue();
-			print("Amount Stored [mB]: " + fuel.amount);
-			print("Amount Processed [mB]: " + fuel.processed);
+			print("Amount Stored: " + fuel.amount);
+			print("Amount Processed: " + fuel.processed);
 			
 			line();
 		}
@@ -346,13 +346,13 @@ public class FuelSim {
 			print("Resource Type: " + entry.getKey());
 			
 			Resource resource = entry.getValue();
-			print("Starting Amount [mB]: " + resource.amount);
-			print("Supply [mB/t]: " + resource.supply);
-			if (resource.hasDecayRecipe) print("Decay Result [/mB]: " + resource.decayProduct.toString());
-			if (resource.hasDecayRecipe && resource.decayThreshold < Double.MAX_VALUE) print("Decay Threshold [mB]: " + resource.decayThreshold);
+			print("Starting Amount: " + resource.amount);
+			print("Supply Rate: " + resource.supply);
+			if (resource.hasDecayRecipe) print("Decay Result: " + resource.decayProduct.toString());
+			if (resource.hasDecayRecipe && resource.decayThreshold < Double.MAX_VALUE) print("Decay Threshold: " + resource.decayThreshold);
 			if (resource.hasDecayRecipe) print("Decay Recipe Weight: " + resource.recipeWeight);
-			if (resource.craftingThreshold < Double.MAX_VALUE) print("Crafting Threshold [mB]: " + resource.craftingThreshold);
-			if (resource.decayProductLimit < Double.MAX_VALUE) print("Decay Limit [mB]: " + resource.decayProductLimit);
+			if (resource.craftingThreshold < Double.MAX_VALUE) print("Crafting Threshold: " + resource.craftingThreshold);
+			if (resource.decayProductLimit < Double.MAX_VALUE) print("Decay Limit: " + resource.decayProductLimit);
 			
 			line();
 		}
@@ -363,7 +363,7 @@ public class FuelSim {
 			print("Resource Type: " + entry.getKey());
 			
 			Resource resource = entry.getValue();
-			print("Amount Stored [mB]: " + resource.amount);
+			print("Amount Stored: " + resource.amount);
 			
 			line();
 		}

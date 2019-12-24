@@ -1,5 +1,5 @@
 <data>
 	<speed>100</speed>
-	<iterations>100000</iterations>
+	<iterations>1000000</iterations>
 	<print_each_iteration>false</print_each_iteration>
 </data>
