@@ -214,30 +214,6 @@
 		<recipe_weight>0.2</recipe_weight>
 	</fuel>
 	
-	<fuel name="MIX-239">
-		<process_time>0.00000001</process_time>
-		<cells>2147483647</cells>
-		<starting_amount>0</starting_amount>
-		<supply_rate>0</supply_rate>
-		<has_reprocessor_recipe>true</has_reprocessor_recipe>
-		<reprocessor_recipe>
-			<input>9</input>
-			<output name="U-238">4</output>
-			<output name="Pu-241">1</output>
-			<output name="Pu-242">2</output>
-			<output name="Am-243">1</output>
-		</reprocessor_recipe>
-		<has_crafting_recipe>true</has_crafting_recipe>
-		<crafting_recipe>
-			<result>9</result>
-			<ingredient name="Pu-239">1</ingredient>
-			<ingredient name="U-238">8</ingredient>
-		</crafting_recipe>
-		<craft_product_limit>-1</craft_product_limit>
-		<recipe_priority>192</recipe_priority>
-		<recipe_weight>0.25</recipe_weight>
-	</fuel>
-	
 	<fuel name="LEP-241">
 		<process_time>0.00000001</process_time>
 		<cells>2147483647</cells>
@@ -286,7 +262,7 @@
 		<recipe_weight>0.5</recipe_weight>
 	</fuel>
 	
-	<fuel name="MIX-241">
+	<fuel name="MIX-239">
 		<process_time>0.00000001</process_time>
 		<cells>2147483647</cells>
 		<starting_amount>0</starting_amount>
@@ -297,6 +273,30 @@
 			<output name="U-238">4</output>
 			<output name="Pu-241">1</output>
 			<output name="Pu-242">2</output>
+			<output name="Am-243">1</output>
+		</reprocessor_recipe>
+		<has_crafting_recipe>true</has_crafting_recipe>
+		<crafting_recipe>
+			<result>9</result>
+			<ingredient name="Pu-239">1</ingredient>
+			<ingredient name="U-238">8</ingredient>
+		</crafting_recipe>
+		<craft_product_limit>-1</craft_product_limit>
+		<recipe_priority>192</recipe_priority>
+		<recipe_weight>0.25</recipe_weight>
+	</fuel>
+	
+	<fuel name="MIX-241">
+		<process_time>0.00000001</process_time>
+		<cells>2147483647</cells>
+		<starting_amount>0</starting_amount>
+		<supply_rate>0</supply_rate>
+		<has_reprocessor_recipe>true</has_reprocessor_recipe>
+		<reprocessor_recipe>
+			<input>9</input>
+			<output name="U-238">3</output>
+			<output name="Pu-241">1</output>
+			<output name="Pu-242">3</output>
 			<output name="Am-243">1</output>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
@@ -318,10 +318,10 @@
 		<has_reprocessor_recipe>true</has_reprocessor_recipe>
 		<reprocessor_recipe>
 			<input>9</input>
-			<output name="Am-243">4</output>
+			<output name="Am-243">3</output>
 			<output name="Cm-245">1</output>
-			<output name="Cm-246">2</output>
-			<output name="Bk-247">1</output>
+			<output name="Cm-246">3</output>
+			<output name="Bk-248">1</output>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
 		<crafting_recipe>
@@ -344,7 +344,7 @@
 			<input>9</input>
 			<output name="Am-243">3</output>
 			<output name="Cm-243">1</output>
-			<output name="Cm-246">4</output>
+			<output name="Cm-246">2</output>
 			<output name="Bk-247">1</output>
 		</reprocessor_recipe>
 		<has_crafting_recipe>true</has_crafting_recipe>
