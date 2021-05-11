@@ -8,11 +8,7 @@ import org.w3c.dom.Document;
 
 class FileReader {
 	
-	static final DocumentBuilderFactory DOCUMENT_FACTORY;
-	
-	static {
-		DOCUMENT_FACTORY = DocumentBuilderFactory.newInstance();
-	}
+	static final DocumentBuilderFactory DOCUMENT_FACTORY = DocumentBuilderFactory.newInstance();
 	
 	static Document buildDocument(final String xmlName) throws Exception {
 		return DOCUMENT_FACTORY.newDocumentBuilder().parse(new File(xmlName + ".xml"));
