@@ -1,1 +1,1 @@
-java -jar ncfuelsim-1.0.jar
+java -jar ncfuelsim-1.2.jar
