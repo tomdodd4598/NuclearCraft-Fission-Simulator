@@ -32,7 +32,7 @@ class Materials {
 		Fuel(final double time, final long vessels, final double start, final double supply, final boolean hasReprocessingRecipe, final List<Stack> reprocessingProducts, final double craftProductLimit, final boolean hasCraftingRecipe, final List<Stack> craftingIngredients, final double recipeWeight) {
 			this.time = time;
 			this.vessels = vessels;
-			fuelRate = FuelSim.SPEED*vessels/time;
+			fuelRate = Main.SPEED*vessels/time;
 			this.amount = start;
 			this.supply = supply;
 			this.hasReprocessingRecipe = hasReprocessingRecipe;
